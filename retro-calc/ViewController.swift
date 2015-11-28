@@ -42,19 +42,28 @@ class ViewController: UIViewController {
         }
     }
     
-
+    @IBAction func numberPressed(btn: UIButton!) {
+        
+        playSound()
+        
+        
+    }
 
 
     @IBAction func onDividePressed(sender: AnyObject) {
+        processOperation(Operation.Divide)
     }
     
     @IBAction func onMultiplyPressed(sender: AnyObject) {
+        processOperation(Operation.Multiply)
     }
 
     @IBAction func onSubtractPressed(sender: AnyObject) {
+        processOperation(Operation.Subtract)
     }
     
     @IBAction func onAddPressed(sender: AnyObject) {
+        processOperation(Operation.Add)
     }
     
     @IBAction func onEqualsPressed(sender: AnyObject) {
@@ -63,7 +72,15 @@ class ViewController: UIViewController {
     @IBAction func onClearPressed(sender: AnyObject) {
     }
     
-    
+    func processOperation(op: Operation) {
+        
+        playSound()
+        
+        
+        
+        
+        
+    }
 //    override func didReceiveMemoryWarning() {
 //        super.didReceiveMemoryWarning()
 //        // Dispose of any resources that can be recreated.
