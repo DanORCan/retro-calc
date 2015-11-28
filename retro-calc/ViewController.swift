@@ -41,7 +41,29 @@ class ViewController: UIViewController {
             print(err.debugDescription)
         }
     }
+    
 
+
+
+    @IBAction func onDividePressed(sender: AnyObject) {
+    }
+    
+    @IBAction func onMultiplyPressed(sender: AnyObject) {
+    }
+
+    @IBAction func onSubtractPressed(sender: AnyObject) {
+    }
+    
+    @IBAction func onAddPressed(sender: AnyObject) {
+    }
+    
+    @IBAction func onEqualsPressed(sender: AnyObject) {
+    }
+
+    @IBAction func onClearPressed(sender: AnyObject) {
+    }
+    
+    
 //    override func didReceiveMemoryWarning() {
 //        super.didReceiveMemoryWarning()
 //        // Dispose of any resources that can be recreated.
