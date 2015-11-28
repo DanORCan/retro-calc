@@ -252,6 +252,9 @@
                                             <constraint firstAttribute="width" constant="193" id="vni-pg-lK2"/>
                                         </constraints>
                                         <state key="normal" image="clear"/>
+                                        <connections>
+                                            <action selector="onClearPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dk8-Y2-rjX"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <animations/>
