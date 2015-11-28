@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4319415B1C0954CE00161DE1 /* Minecraft.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4319415A1C0954CE00161DE1 /* Minecraft.ttf */; };
 		434FD9CC1C09198900638768 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434FD9CB1C09198900638768 /* AppDelegate.swift */; };
 		434FD9CE1C09198900638768 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434FD9CD1C09198900638768 /* ViewController.swift */; };
 		434FD9D11C09198900638768 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 434FD9CF1C09198900638768 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4319415A1C0954CE00161DE1 /* Minecraft.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Minecraft.ttf; sourceTree = "<group>"; };
 		434FD9C81C09198900638768 /* retro-calc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "retro-calc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		434FD9CB1C09198900638768 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		434FD9CD1C09198900638768 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 		434FD9CA1C09198900638768 /* retro-calc */ = {
 			isa = PBXGroup;
 			children = (
+				4319415A1C0954CE00161DE1 /* Minecraft.ttf */,
 				434FD9CB1C09198900638768 /* AppDelegate.swift */,
 				434FD9CD1C09198900638768 /* ViewController.swift */,
 				434FD9CF1C09198900638768 /* Main.storyboard */,
@@ -125,6 +128,7 @@
 			files = (
 				434FD9D61C09198900638768 /* LaunchScreen.storyboard in Resources */,
 				434FD9D31C09198900638768 /* Assets.xcassets in Resources */,
+				4319415B1C0954CE00161DE1 /* Minecraft.ttf in Resources */,
 				434FD9D11C09198900638768 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +289,7 @@
 				434FD9DC1C09198900638768 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

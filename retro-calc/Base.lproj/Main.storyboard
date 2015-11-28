@@ -4,6 +4,11 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Minecraft.ttf">
+            <string>Minecraft</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -99,7 +104,7 @@
                                                 <state key="normal" image="4"/>
                                             </button>
                                             <button opaque="NO" tag="5" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YVG-c1-ysm" userLabel="5">
-                                                <rect key="frame" x="66" y="0.0" width="59" height="60"/>
+                                                <rect key="frame" x="66" y="0.0" width="60" height="60"/>
                                                 <animations/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="4JD-gO-Olh"/>
@@ -108,7 +113,7 @@
                                                 <state key="normal" image="5"/>
                                             </button>
                                             <button opaque="NO" tag="6" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kr9-wE-Mjb" userLabel="6">
-                                                <rect key="frame" x="131" y="0.0" width="60" height="60"/>
+                                                <rect key="frame" x="132" y="0.0" width="59" height="60"/>
                                                 <animations/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="9wv-uY-VNC"/>
@@ -132,7 +137,7 @@
                                                 <state key="normal" image="1"/>
                                             </button>
                                             <button opaque="NO" tag="2" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pdp-4c-9uZ" userLabel="2">
-                                                <rect key="frame" x="66" y="0.0" width="59" height="60"/>
+                                                <rect key="frame" x="66" y="0.0" width="60" height="60"/>
                                                 <animations/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="H7l-Ii-PD2"/>
@@ -141,7 +146,7 @@
                                                 <state key="normal" image="2"/>
                                             </button>
                                             <button opaque="NO" tag="3" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HxH-CP-dss" userLabel="3">
-                                                <rect key="frame" x="131" y="0.0" width="60" height="60"/>
+                                                <rect key="frame" x="132" y="0.0" width="59" height="60"/>
                                                 <animations/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="ceP-CJ-SSf"/>
@@ -165,7 +170,7 @@
                                                 <state key="normal" image="0"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DGg-38-iPa" userLabel="Divide">
-                                                <rect key="frame" x="66" y="0.0" width="60" height="60"/>
+                                                <rect key="frame" x="66" y="0.0" width="59" height="60"/>
                                                 <animations/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="G0L-fI-x7k"/>
@@ -174,7 +179,7 @@
                                                 <state key="normal" image="divide"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a3e-TD-LDR" userLabel="Multiply">
-                                                <rect key="frame" x="132" y="0.0" width="59" height="60"/>
+                                                <rect key="frame" x="131" y="0.0" width="60" height="60"/>
                                                 <animations/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="WUG-bY-l7m"/>
@@ -198,7 +203,7 @@
                                                 <state key="normal" image="subtract"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pIk-qB-cEF" userLabel="Add">
-                                                <rect key="frame" x="66" y="0.0" width="59" height="60"/>
+                                                <rect key="frame" x="66" y="0.0" width="60" height="60"/>
                                                 <animations/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="60" id="ddF-8o-b4T"/>
@@ -207,7 +212,7 @@
                                                 <state key="normal" image="add"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lbu-qY-3yZ" userLabel="Equals">
-                                                <rect key="frame" x="131" y="0.0" width="60" height="60"/>
+                                                <rect key="frame" x="132" y="0.0" width="59" height="60"/>
                                                 <animations/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="60" id="7TM-AA-1A4"/>
@@ -229,16 +234,30 @@
                                 </subviews>
                                 <animations/>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jvY-26-7VR">
+                                <rect key="frame" x="189" y="85" width="217" height="32"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="217" id="OAD-9L-AnY"/>
+                                    <constraint firstAttribute="height" constant="32" id="agf-2P-V3Y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Minecraft" family="Minecraft" pointSize="29"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="jvY-26-7VR" firstAttribute="trailing" secondItem="YcD-6k-lmI" secondAttribute="trailing" constant="-15" id="CZq-f8-l2V"/>
                             <constraint firstItem="YcD-6k-lmI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Cuu-kc-tAa"/>
                             <constraint firstItem="79L-iF-3yv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="HQr-3W-SeK"/>
                             <constraint firstAttribute="trailing" secondItem="79L-iF-3yv" secondAttribute="trailing" id="Lx7-rr-sr1"/>
                             <constraint firstAttribute="trailing" secondItem="VfA-ZJ-4ee" secondAttribute="trailing" id="OBw-j5-SfV"/>
                             <constraint firstAttribute="bottom" secondItem="79L-iF-3yv" secondAttribute="bottom" id="QT3-8M-zat"/>
                             <constraint firstItem="YcD-6k-lmI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="U8C-6B-Gum"/>
+                            <constraint firstItem="jvY-26-7VR" firstAttribute="top" secondItem="YcD-6k-lmI" secondAttribute="top" constant="10" id="ZhW-kh-XyJ"/>
                             <constraint firstItem="q7V-fD-eDO" firstAttribute="centerY" secondItem="YcD-6k-lmI" secondAttribute="centerY" constant="23" id="a0M-IU-ZrE"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="VfA-ZJ-4ee" secondAttribute="bottom" id="aNu-mW-7wu"/>
                             <constraint firstItem="VfA-ZJ-4ee" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="eBf-UK-hRR"/>
