@@ -30,6 +30,7 @@ class ViewController: UIViewController {
 
 
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         let path = NSBundle.mainBundle().pathForResource("btn", ofType: "wav")
         let soundUrl = NSURL(fileURLWithPath: path!)
@@ -40,12 +41,14 @@ class ViewController: UIViewController {
         } catch let err as NSError {
             print(err.debugDescription)
         }
+        
     }
     
     @IBAction func numberPressed(btn: UIButton!) {
         
         playSound()
-        
+        runningNumber += "\(btn.tag)"           //this gets number from attributes inspector tag
+        outputLbl.text = runningNumber
         
     }
 
@@ -67,24 +70,56 @@ class ViewController: UIViewController {
     }
     
     @IBAction func onEqualsPressed(sender: AnyObject) {
+        processOperation(currentOperation)
     }
 
     @IBAction func onClearPressed(sender: AnyObject) {
+        playSound()
+        runningNumber = ""
+        leftValStr = ""
+        rightValStr = ""
+        currentOperation = Operation.Empty
+        result = ""
+        outputLbl.text = "0"        
     }
     
     func processOperation(op: Operation) {
         
         playSound()
-        
-        
-        
-        
+        if currentOperation != Operation.Empty {
+            //run some math
+            
+            if runningNumber != "" {
+                rightValStr = runningNumber
+                runningNumber = ""
+                
+                if currentOperation == Operation.Multiply {
+                    result = "\(Double(leftValStr)! * Double(rightValStr)!)"
+                } else if currentOperation == Operation.Divide {
+                    result = "\(Double(leftValStr)! / Double(rightValStr)!)"
+                } else if currentOperation == Operation.Subtract {
+                    result = "\(Double(leftValStr)! - Double(rightValStr)!)"
+                } else if currentOperation == Operation.Add {
+                    result = "\(Double(leftValStr)! + Double(rightValStr)!)"
+                }
+                
+                leftValStr = result
+                outputLbl.text = result
+                
+            }
+            
+            currentOperation = op
+            
+        } else {
+            //this is the first time an operator has been pressed
+            
+            leftValStr = runningNumber
+            runningNumber = ""
+            currentOperation = op
+            
+        }
         
     }
-//    override func didReceiveMemoryWarning() {
-//        super.didReceiveMemoryWarning()
-//        // Dispose of any resources that can be recreated.
-//    }
 
     func playSound() {
         if btnSound.playing {
